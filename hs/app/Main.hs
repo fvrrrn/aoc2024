@@ -11,7 +11,7 @@ import Data.Text (Text)
 -- import Data.Text qualified as T (unpack)
 import Data.Text.IO qualified as TIO (readFile)
 import Day1 qualified (part1, part2)
-import Day2 qualified (part1)
+import Day2 qualified (part1, part2)
 import System.Environment (getArgs)
 
 getDayInput :: Int -> IO Text
@@ -35,4 +35,4 @@ run' day name showIO funcs = do
 main :: IO ()
 main = do
   run 1 (either fail print) [Day1.part1, Day1.part2]
-  run 2 (either fail print) [Day2.part1]
+  run 2 (either fail print) [Day2.part1, Day2.part2]
